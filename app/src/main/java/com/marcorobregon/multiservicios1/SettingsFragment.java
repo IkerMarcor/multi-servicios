@@ -3,10 +3,15 @@ package com.marcorobregon.multiservicios1;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +29,7 @@ public class SettingsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    RecyclerView recyclerView;
     public SettingsFragment() {
         // Required empty public constructor
     }
@@ -53,12 +59,29 @@ public class SettingsFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+        View v = inflater.inflate(R.layout.fragment_settings, container, false);
+        recyclerView = v.findViewById(R.id.listRecyclerView);
+
+
+        //Creamos la lista para las opciones de nuestro settings fragment
+        List<ItemsSettings> items = new ArrayList<ItemsSettings>();
+        items.add(new ItemsSettings("Notifications",R.drawable.ic_baseline_notifications_24,R.drawable.ic_baseline_arrow_forward_ios_24));
+        items.add(new ItemsSettings("Help",R.drawable.ic_baseline_back_hand_24,R.drawable.ic_baseline_arrow_forward_ios_24));
+        items.add(new ItemsSettings("Payment",R.drawable.ic_baseline_credit_card_24,R.drawable.ic_baseline_arrow_forward_ios_24));
+        items.add(new ItemsSettings("About",R.drawable.ic_baseline_help_outline_24,R.drawable.ic_baseline_arrow_forward_ios_24));
+        items.add(new ItemsSettings("Logout",R.drawable.ic_baseline_logout_24,R.drawable.ic_baseline_arrow_forward_ios_24));
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setAdapter(new MyAdapter(getContext(),items));
+
+        return v;
+
     }
 }
