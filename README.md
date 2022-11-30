@@ -5,7 +5,7 @@
 * Inicio contiene los siguientes fragmentos => Inicio, Ajustes y Perfil
 
 ## Nos hará falta las siguientes activities o vistas:
-* Seleccion de Local
-* Chat/llamada
+* Seleccion de Local 1
+* Chat/llamada 1
 * Contratar
 * pagar y calificar

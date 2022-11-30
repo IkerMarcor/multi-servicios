@@ -13,9 +13,19 @@
         <item name="android:statusBarColor">@color/p_dark</item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="BottomNavigation">
         <item name="android:background">@color/primary</item>
         <item name="itemIconTint">@color/p_light</item>
         <item name="itemTextColor">@color/p_light</item>
     </style>
+
+    <style name="Theme.MultiServicios1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MultiServicios1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MultiServicios1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
