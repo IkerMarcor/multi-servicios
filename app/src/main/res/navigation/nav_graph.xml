@@ -21,11 +21,19 @@
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_chat">
         <action
-            android:id="@+id/action_SecondFragment_to_pagoFragment"
-            app:destination="@id/pagoFragment" />
+            android:id="@+id/action_SecondFragment_to_contratarFragment2"
+            app:destination="@id/contratarFragment2" />
     </fragment>
     <fragment
-        android:id="@+id/pagoFragment"
+        android:id="@+id/contratarFragment2"
         android:name="com.marcorobregon.multiservicios1.ContratarFragment"
-        android:label="PagoFragment" />
+        android:label="ContratarFragment" >
+        <action
+            android:id="@+id/action_contratarFragment2_to_metodosPagosFragment"
+            app:destination="@id/metodosPagosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/metodosPagosFragment"
+        android:name="com.marcorobregon.multiservicios1.MetodosPagosFragment"
+        android:label="MetodosPagosFragment" />
 </navigation>
