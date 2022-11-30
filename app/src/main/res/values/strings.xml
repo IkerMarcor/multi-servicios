@@ -2,4 +2,37 @@
     <string name="app_name">MultiServicios1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagen_de_mapa">imagen de mapa</string>
+    <string name="buscar_servicios">Buscar Servicios</string>
+    <string name="estrellitas">estrellitas</string>
+    <string name="title_activity_local_seleccionado">ActivityLocalSeleccionado</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="chatear">chatear</string>
+    <string name="imagen_del_ingeniero">imagen del ingeniero</string>
+    <string name="nombre">Nombre:</string>
+    <string name="direcci_n">Dirección:</string>
+    <string name="ing_gato_lloron">Ing. Gato lloron</string>
+    <string name="profesion">Profesion:</string>
+    <string name="insta_logo">insta logo</string>
+    <string name="inge_en_sistemas_de_informaci_n">Inge en sistemas de información</string>
+    <string name="facebook_logo">facebook logo</string>
+    <string name="la_casa_del_lado_45">La casa del lado #45</string>
+    <string name="n_a">N/a</string>
+    <string name="sitio_web">Sitio web:</string>
+    <string name="imagen_del_chat">imagen del chat</string>
+    <string name="pago">pago</string>
+    <string name="pagar">Pagar</string>
+    <string name="contratar">contratar</string>
+    <string name="descripci_n">Descripción:</string>
+    <string name="descripci_n_del_trabajo_por_el_que_quiere_contratar_al_trabador">descripción del trabajo por el que quiere contratar al trabador</string>
+    <string name="selecciona_un_m_todo_de_pago">Selecciona un método de pago:</string>
+    <string name="monto_a_pagar">Monto a pagar:</string>
+    <string name="_123">123</string>
 </resources>
