@@ -11,14 +11,36 @@
         android:id="@+id/chatear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="288dp"
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:text="@string/chatear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintHorizontal_bias="0.801"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/f_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="140dp"
+        android:contentDescription="@string/facebook_logo"
+        android:src="@drawable/f_logo"
+        app:layout_constraintStart_toEndOf="@+id/profesion_bold"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_label3" />
+
+    <ImageView
+        android:id="@+id/ig_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="140dp"
+        android:contentDescription="@string/insta_logo"
+        android:src="@drawable/insta_logo"
+        app:layout_constraintStart_toEndOf="@+id/f_logo"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_label3" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -88,6 +110,20 @@
         app:layout_constraintTop_toBottomOf="@+id/ubicacion_bold" />
 
     <TextView
+        android:id="@+id/ubicacion_bold3"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#03A9F4"
+        android:text="@string/rating"
+        android:textColor="@color/primary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ubicacion_bold2" />
+
+    <TextView
         android:id="@+id/nombre_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -135,26 +171,17 @@
         app:layout_constraintStart_toEndOf="@+id/profesion_bold"
         app:layout_constraintTop_toBottomOf="@+id/nombre_label3" />
 
-    <ImageView
-        android:id="@+id/f_logo"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
-        android:contentDescription="@string/facebook_logo"
-        android:src="@drawable/f_logo"
+        android:layout_marginTop="16dp"
+        android:clickable="false"
+        android:contentDescription="@string/rating"
+        android:rating="1.5"
+        android:isIndicator="true"
         app:layout_constraintStart_toEndOf="@+id/profesion_bold"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_label3" />
-
-    <ImageView
-        android:id="@+id/ig_logo"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
-        android:contentDescription="@string/insta_logo"
-        android:src="@drawable/insta_logo"
-        app:layout_constraintStart_toEndOf="@+id/f_logo"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_label3" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre_label4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

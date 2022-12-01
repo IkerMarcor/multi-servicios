@@ -12,18 +12,16 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="chatear">chatear</string>
     <string name="imagen_del_ingeniero">imagen del ingeniero</string>
     <string name="nombre">Nombre:</string>
     <string name="direcci_n">Dirección:</string>
-    <string name="ing_gato_lloron">Ing. Gato lloron</string>
-    <string name="profesion">Profesion:</string>
+    <string name="ing_gato_lloron">Ing. Gato llorón</string>
+    <string name="profesion">Profesión:</string>
     <string name="insta_logo">insta logo</string>
     <string name="inge_en_sistemas_de_informaci_n">Inge en sistemas de información</string>
     <string name="facebook_logo">facebook logo</string>
-    <string name="la_casa_del_lado_45">La casa del lado #45</string>
+    <string name="la_casa_del_lado_45">La casa de al lado #45</string>
     <string name="n_a">N/a</string>
     <string name="sitio_web">Sitio web:</string>
     <string name="imagen_del_chat">imagen del chat</string>
@@ -35,4 +33,5 @@
     <string name="selecciona_un_m_todo_de_pago">Selecciona un método de pago:</string>
     <string name="monto_a_pagar">Monto a pagar:</string>
     <string name="_123">123</string>
+    <string name="rating">Rating del inge:</string>
 </resources>
