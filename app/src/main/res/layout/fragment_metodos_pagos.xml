@@ -66,8 +66,8 @@
         android:id="@+id/editTextNumberDecimal"
         android:layout_width="161dp"
         android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="@string/_123"
         android:inputType="numberDecimal"
@@ -80,9 +80,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="77dp"
+        android:layout_marginBottom="48dp"
         android:text="@string/monto_a_pagar"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Califique al inge:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
